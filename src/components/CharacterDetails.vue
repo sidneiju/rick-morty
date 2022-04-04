@@ -16,7 +16,7 @@
 
       <div class="episodes-container">
         <span class="character-name"
-          >Episódios em que personagem aparece:
+          >Episódios em que o personagem aparece:
         </span>
         <div class="episodes-list">
           <li
