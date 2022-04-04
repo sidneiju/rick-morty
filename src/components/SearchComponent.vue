@@ -3,7 +3,7 @@
     <input
       class="input-box"
       type="text"
-      placeholder="Busque por um personagem"
+      :placeholder="placeholder"
       v-model="searchTerm"
       @keypress.enter="performSearch()"
     />
@@ -16,6 +16,10 @@ import ButtonComponent from "./ButtonComponent.vue";
 
 export default {
   name: "SearchComponent",
+
+  props: {
+    placeholder: String
+  },
 
   components: {
     ButtonComponent,

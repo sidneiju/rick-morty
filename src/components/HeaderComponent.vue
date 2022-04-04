@@ -20,7 +20,9 @@ export default {
 
   methods: {
     navigateBack() {
-      this.$router.replace({ name: "selection" });
+      if (this.$router) {
+        this.$router.replace({ name: "selection" });
+      }
     },
   },
 };

@@ -5,7 +5,10 @@
     <HeaderComponent pageTitle="Episódios"></HeaderComponent>
 
     <div class="filter-container">
-      <SearchComponent @perform-search="performSearch"></SearchComponent>
+      <SearchComponent
+        placeholder="Busque por um episódio..."
+        @perform-search="performSearch"
+      ></SearchComponent>
 
       <SelectBoxComponent
         :selectionData="selectionData"

@@ -5,7 +5,7 @@
     <HeaderComponent pageTitle="Personagens"></HeaderComponent>
 
     <div class="filter-container">
-      <SearchComponent @perform-search="performSearch"></SearchComponent>
+      <SearchComponent placeholder="Busque por um personagem..." @perform-search="performSearch"></SearchComponent>
 
       <SelectBoxComponent
         :selectionData="selectionData"

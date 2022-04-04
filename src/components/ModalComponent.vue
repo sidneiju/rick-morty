@@ -20,8 +20,10 @@ export default {
 
   methods: {
     closeModal() {
-      const parentRouteName = this.$router.history.current.matched[0].name;
-      this.$router.replace({ name: parentRouteName });
+      if (this.$router) {
+        const parentRouteName = this.$router.history.current.matched[0].name;
+        this.$router.replace({ name: parentRouteName });
+      }
     },
   },
 };
